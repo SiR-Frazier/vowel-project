@@ -1,130 +1,149 @@
 var vowelArray = [];
-var counter = 0;
+var counterA = 0;
+var counterB = 0;
+var counterC = 0;
+var counterD = 0;
+var counterE = 0;
+var counterF = 0;
+var counterG = 0;
+var counterH = 0;
+
 $(document).ready(function() {
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterA").submit(function(event) {
     event.preventDefault();
+    var findVowelInputA = $("#vowel-multiWord").val();
+    var vowelArrayA = findVowelInputA.split("");
 
-    var findVowelInput = $("#vowel-multiWord").val();
-
-    var vowelArray = findVowelInput.split("");
-
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayA.length; i++) {
+        if (vowelArrayA[i] === "a" || vowelArrayA[i] === "e" || vowelArrayA[i] === "i" || vowelArrayA[i] === "o" || vowelArrayA[i] === "u") {
+          counterA += 1;
         }
       }
-
-
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberA").text(counterA);
+      $("#resultA").show();
   });
 
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterB").submit(function(event) {
     event.preventDefault();
+    var findVowelInputB = $("#vowel-multiChar").val();
 
-    var findVowelInput = $("#vowel-multiWord").val();
+    var vowelArrayB = findVowelInputB.split("");
 
-    var vowelArray = findVowelInput.split("");
-
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayB.length; i++) {
+        if (vowelArrayB[i] === "a") {
+          counterB += 1;
         }
       }
 
 
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberB").text(counterB);
+      $("#resultB").show();
   });
 
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterC").submit(function(event) {
     event.preventDefault();
 
-    var findVowelInput = $("#vowel-multiWord").val();
+    var findVowelInputC = $("#singleVowel").val();
+    var vowelArrayC = findVowelInputC.split("");
 
-    var vowelArray = findVowelInput.split("");
-
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayC.length; i++) {
+        if (vowelArrayC[i] === "e") {
+          counterC += 1;
         }
       }
+      console.log(vowelArrayC);
 
-
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberC").text(counterC);
+      $("#resultC").show();
   });
 
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterD").submit(function(event) {
     event.preventDefault();
 
-    var findVowelInput = $("#vowel-multiWord").val();
+    var findVowelInputD = $("#noCaseVowel").val();
 
-    var vowelArray = findVowelInput.split("");
+    var vowelArrayD = findVowelInputD.split("");
 
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayD.length; i++) {
+        if (vowelArrayD[i] === "a" || vowelArrayD[i] === "e") {
+          counterD += 1;
         }
       }
 
-
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberD").text(counterD);
+      $("#resultD").show();
   });
 
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterE").submit(function(event) {
     event.preventDefault();
 
-    var findVowelInput = $("#vowel-multiWord").val();
+    var findVowelInputE = $("#allVowels").val();
 
-    var vowelArray = findVowelInput.split("");
+    var vowelArrayE = findVowelInputE.split("");
 
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayE.length; i++) {
+        if (vowelArrayE[i] === "o" || vowelArrayE[i] === "O") {
+          counterE += 1;
         }
       }
 
 
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberE").text(counterE);
+      $("#resultE").show();
   });
 
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterF").submit(function(event) {
     event.preventDefault();
 
-    var findVowelInput = $("#vowel-multiWord").val();
+    var findVowelInputF = $("#onlyLetter").val();
 
-    var vowelArray = findVowelInput.split("");
+    var vowelArrayF = findVowelInputF.toLowerCase().split("");
 
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayF.length; i++) {
+        if (vowelArrayF[i] === "a" || vowelArrayF[i] === "e" || vowelArrayF[i] === "i" || vowelArrayF[i] === "o" || vowelArrayF[i] === "u") {
+          counterF += 1;
         }
       }
 
 
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberF").text(counterF);
+      $("#resultF").show();
   });
 
-  $("form#vowel-counter").submit(function(event) {
+  $("form#vowel-counterG").submit(function(event) {
     event.preventDefault();
 
-    var findVowelInput = $("#vowel-multiWord").val();
+    var findVowelInputG = $("#nonAlpha").val();
 
-    var vowelArray = findVowelInput.split("");
+    var vowelArrayG = findVowelInputG.toLowerCase().split("");
 
-      for (var i = 0; i <= vowelArray.length; i++) {
-        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
-          counter += 1;
+      for (var i = 0; i <= vowelArrayG.length; i++) {
+        if (vowelArrayG[i] === "a" || vowelArrayG[i] === "e" || vowelArrayG[i] === "i" || vowelArrayG[i] === "o" || vowelArrayG[i] === "u") {
+          counterG += 1;
         }
       }
 
 
-      $("#vowelNumber").text(counter);
-      $("#result").show();
+      $("#vowelNumberG").text(counterG);
+      $("#resultG").show();
+  });
+
+  $("form#vowel-counterH").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInputH = $("#vowel-noCaps").val();
+
+    var vowelArrayH = findVowelInputH.toLowerCase().split("");
+
+      for (var i = 0; i <= vowelArrayH.length; i++) {
+        if (vowelArrayH[i] === "a" || vowelArrayH[i] === "e" || vowelArrayH[i] === "i" || vowelArrayH[i] === "o" || vowelArrayH[i] === "u") {
+          counterH += 1;
+        }
+      }
+
+
+      $("#vowelNumberH").text(counterH);
+      $("#resultH").show();
   });
 
 });
