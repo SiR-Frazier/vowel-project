@@ -1,18 +1,130 @@
-var leapYear = function(year) {
-  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-    return true;
-  } else {
-    return false;
-  }
-};
-
-
+var vowelArray = [];
+var counter = 0;
 $(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
+  $("form#vowel-counter").submit(function(event) {
     event.preventDefault();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
-    console.log(result);
-    $("#result").text(result);
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
   });
+
+  $("form#vowel-counter").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
+  });
+
+  $("form#vowel-counter").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
+  });
+
+  $("form#vowel-counter").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
+  });
+
+  $("form#vowel-counter").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
+  });
+
+  $("form#vowel-counter").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
+  });
+
+  $("form#vowel-counter").submit(function(event) {
+    event.preventDefault();
+
+    var findVowelInput = $("#vowel-multiWord").val();
+
+    var vowelArray = findVowelInput.split("");
+
+      for (var i = 0; i <= vowelArray.length; i++) {
+        if (vowelArray[i] === "a" || vowelArray[i] === "e" || vowelArray[i] === "i" || vowelArray[i] === "o" || vowelArray[i] === "u") {
+          counter += 1;
+        }
+      }
+
+
+      $("#vowelNumber").text(counter);
+      $("#result").show();
+  });
+
 });
