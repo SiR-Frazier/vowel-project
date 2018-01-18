@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>vowel counter</title>
   </head>
   <body>
+    <div class="container">
+      <h1>vowel counter</h1>
 
+      <form id="vowel-counter">
+        <div class="form-group">
+          <label for="vowel-multiWord">Enter a multiple-word sentence (with varying capitalizations):</label>
+          <input id="vowel-multiWord" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="vowel-multiChar">Enter a multiple-character word:</label>
+          <input id="vowel-multiChar" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="singleVowel">Enter a word or sentence:</label>
+          <input id="singleVowel" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="noCaseVowel">Enter a lowercase word or sentence:</label>
+          <input id="noCaseVowel" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="allVowels">Enter a word or sentence (with varying capitalizations):</label>
+          <input id="allVowels" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="onlyLetter">Enter a multiple word sentence:</label>
+          <input id="onlyLetter" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="vowel-noCaps">Enter a multiple word sentence:</label>
+          <input id="vowel-noCaps" type="text">
+        </div>
+
+        <button type="submit" class="btn">Find out!</button>
+      </form>
+
+      <div id="result">
+
+      </div>
+    </div>
   </body>
 </html>
